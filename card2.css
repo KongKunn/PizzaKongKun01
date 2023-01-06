@@ -1,0 +1,129 @@
+*{
+    /* background-color: b  lack; */
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+  }
+  body{
+        background-color: black;
+
+  }
+hr{
+    border: 0.1px solid rgb(232, 170, 13);
+}
+.container-cart{
+    
+z-index: -1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: rgb(50, 77, 77);
+width: 800px;
+height: 503px;
+}
+.header-cart{
+display: flex;
+padding: 10px 0 10px 10px;
+}
+.header-cart h2{
+    color:#fff  ;
+    font-size: 30px;
+    font-weight: 2000;
+    background: linear-gradient(90deg,#05fbff,#d15101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+    padding: 2px 0 0 10px;
+}
+.body-cart{
+    display: flex;
+}
+.pay{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%
+}
+.title{
+color: #fff;
+  padding-top: 10px;
+}
+/* ----------------------------- */
+/* --------- InputBox ---------- */
+/* ----------------------------- */
+.inputbox {
+    position: relative;
+    width: 196px;
+    justify-content: center;
+    margin-bottom: 25px;  
+padding-top: 10px;}
+  .inputbox input {
+    position: relative;
+    width   : 100%;
+    left: 30%;
+    top: 2px;
+    padding: 5px 10px 5px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    width: 300px;
+    position: absolute;
+    left: 15px;
+    padding: 10px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-5px) translateY(-28px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 28px;
+  }
+/* ----------------------------- */
+/* --------  END InputBox  ----- */
+/* ----------------------------- */
+.product{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+width: 60%;
+/* z-index:999999;   */
+  /* display: flex; */
+}
+.product h3{
+  padding: 10px;
+  color: #FFF;
+}

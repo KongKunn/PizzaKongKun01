@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <script src="https://kit.fontawesome.com/bcacd0c471.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="modal hide-modal">
+    <div class="container-cart">
+        <div class="header-cart">
+            <lord-icon
+                src="https://cdn.lordicon.com/cllunfud.json"
+                trigger="loop"
+                colors="outline:#e8b730,primary:#646e78,secondary:#646e78"
+                style="width:50px;height:50px">
+            </lord-icon>            
+            <h2>Yourcart </h2> 
+            <div class="xmark">
+                <i class='fas fa-xmark'></i>
+
+            </div>
+        </div>
+        <hr>
+        <div class="body-cart">    
+            <div class="pay">
+                        <h3 class="title"> Paymen</h3>
+                        <img style="max-width: 150px;" src="./assets/img/card2.png" alt="">
+                <form action="">
+                    <div class="inputbox" onsubmit="return validate()">
+                        <input required="required" type="text" id="namecard" >
+                        <span class="card-name">Name of Card :</span>
+                        <span id="error1"></span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required type="text" id="cardnumber">
+                        <span class="card-number">Credit Card Number :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="expmonth" >
+                        <span class="card-expMonth">Exp Month :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="expyear">
+                        <span class="card-expYear">Exp Year :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="cvv" >
+                        <span class="card-CVV">CVV :</span>
+                        <i></i>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="product">
+                <h3>Product</h3>    
+                <!-- <button>Checkout</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------- End Modal ------------>
+    <!-- header section starts -->
+<header>
+    <a href="#"class="logo"><i class="fas fa-utensils"></i>KongKun Food</a>
+    
+    <div id="menu-bar"class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#speciality">speciality</a>
+        <a href="#popular">popular</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#order">oder</a>
+        
+            
+    </nav>
+    <div class="form">
+        <input class="input" placeholder="Search" required="" type="text">
+        <span class="input-border"></span>
+    </div>
+    
+
+        <button class="cart2">
+
+            <lord-icon class="cart" 
+            src="https://cdn.lordicon.com/cllunfud.json"
+            trigger="hover"
+            style="width:50px;height:50px;bottom: 0;">
+            </lord-icon>
+        </button>
+    
+</header>  
+<!-- ====================== -->
+<!-- Cart -->
+<!-- ====================== -->
+
+
+</div>
+</div>
+<!-- ====================== -->
+<!-- End Cart -->
+<!-- ====================== -->
+
+ <!-- header section ends -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>food made with love</h3>
+        <p>Bánh Kẹo Ngọt Đầy Đủ Hương Vị</p>
+        <a href="#"class="btn">order now</a>
+    </div>
+    <div class="image">
+        <img src="./assets/img/home-img.png" alt="">
+    </div>
+</section>
+<!-- home section ends --> 
+
+
+
+<!-- speciality section starts -->
+
+<section class="speciality" id="speciality">
+    <h1 class="heading"> our <span>speciality</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-1.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-1.png" alt="">
+                <h3>Bánh Mỳ Kẹp Thịt</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-2.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-2.png" alt="">
+                <h3>Bánh Pizza</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-3.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-3.png" alt="">
+                <h3>Kem lạnh ngon tuyệt</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-4.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-4.png" alt="">
+                <h3>Nước ép trái cây</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-5.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-5.png" alt="">
+                <h3>Đồ ngọt</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="./assets/img/s-img-6.jpg" alt="">
+            <div class="content">
+                <img src="./assets/img/s-6.png" alt="">
+                <h3>Healty</h3>
+                <p>Tổng Hợp Những Loại Bánh Ngon Nhất Thế Giới</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</section>
+
+<!-- speciality section ends -->
+
+<!-- popular selection starts -->
+<section class="popular" id="popular">
+    <h1 class="heading">most<span> popular </span>foods</h1>
+    <div class="box-container">
+        <!-- BOX -->
+        <div class="box">
+            <span class="price">20.000 VNĐ</span>
+            <img src="./assets/img/p-1.jpg" alt="">
+            <h3>Bánh mỳ kẹp thịt</h3>
+            <div class="add-product">
+                <button class="minus">-</button>
+            <span class="num">0</span>
+            <button class="plus">+</button>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">80.000 VNĐ</span>
+            <img src="./assets/img/p-2.jpg" alt="">
+            <h3>Bánh kem hoa quả  </h3>
+            <div class="add-product">
+                <button class="minus">-</button>
+            <span class="num">0</span>
+            <button class="plus">+</button>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">15.000 VNĐ</span>
+            <img src="./assets/img/p-3.jpg" alt="">
+            <h3>Bánh ngọt</h3>
+            <div class="add-product">
+            <button class="minus">-</button>
+            <span class="num">0</span>
+            <button class="plus">+</button>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">10.000 VNĐ</span>
+            <img src="./assets/img/p-4.jpg" alt="">
+            <h3>Bánh cupcakes</h3>
+            <div class="add-product">
+                <button class="minus">-</button>
+            <span class="num">0</span>
+            <button class="plus">+</button>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">45.000 VNĐ</span>
+            <img src="./assets/img/p-5.jpg" alt="">
+            <h3>Nước ép hoa quả</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">20.000</span>
+            <img src="./assets/img/p-6.jpg" alt="">
+            <h3>Kem lạnh </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+    </div>
+
+</section>
+<!-- popular selection ends -->
+
+<!-- steps section starts -->
+<section class="steps">
+    <div class="box">
+        <img src="./assets/img/step-1.jpg" alt="">
+        <h3>Chọn món ăn yêu thích</h3>
+    </div>
+    <div class="box">
+        <img src="./assets/img/step-2.jpg" alt="">
+        <h3>Giao hàng nhanh chóng</h3>
+    </div>
+    <div class="box">
+        <img src="./assets/img/step-3.jpg" alt="">
+        <h3>Thanh toán dễ dàng</h3>
+    </div>
+    <div class="box">
+        <img src="./assets/img/step-4.jpg" alt="">
+        <h3>Thưởng thức thôi nào</h3>
+    </div>
+
+</section>
+<!-- steps section ends -->
+
+<!-- gallery section starts -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">our food <span>gallery</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./assets/img/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Hamburger</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Ngọt</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Ngọt</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Kem</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Ngọt</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Gà rán</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-7.jpg" alt="">
+            <div class="content">
+                <h3>Bánh trứng muối</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-8.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Socola</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/img/g-9.jpg" alt="">
+            <div class="content">
+                <h3>Bánh Hạnh nhân</h3> 
+                <p></p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts -->
+
+<section class="review" id="review">
+    <h1 class="heading">reviews</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./assets/img/donadoeat.jpg" style="" alt="">
+            <h3>Cristiano Ronaldo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Từ bé đến giờ tối chưa từng ăn cái bánh nào nó ngon như thế này. Thật tuyệt vời</p>
+        </div>
+        <div class="box">
+            <img src="./assets/img/mesy.jpg" alt="">
+            <h3>Maria</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Đồ ăn ở đây rất ngon, tôi sẽ quay lại vào ngày gần nhất</p>
+        </div>
+        <div class="box">
+            <img src="./assets/img/neyma.jpg" alt="">
+            
+            
+            <h3>Neymar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Rất ngon miệng, phục vụ rất chu đáo và nhiệt tình</p>
+        </div>
+    </div>
+</section>
+
+<!-- review section ends -->
+
+<!-- oder section starts -->
+ 
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>order</span> now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="./assets/img/oder1.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+
+</section>
+ 
+<!-- oder section ends -->
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">tiktok</a>
+        <a href="#" class="btn">nimoTV</a>
+    </div>
+
+    <h1 class="credit">created by : <span> kongKun</h1>
+
+</seciton>
+<div class="loader-container">
+    <img src="./assets/img/load.gif" alt="">
+
+</div>
+
+<!-- scroll top button -->
+
+<a href="#home"class="fa fa-angle-up" id="scroll-top"></a>
+
+
+
+<script src="./script.js"></script></body>
+</html>

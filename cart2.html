@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./card2.css">
+</head>
+<body>
+    <div class="container-cart">
+        <div class="header-cart">
+            <lord-icon
+                src="https://cdn.lordicon.com/cllunfud.json"
+                trigger="loop"
+                colors="outline:#e8b730,primary:#646e78,secondary:#646e78"
+                style="width:50px;height:50px">
+            </lord-icon>            
+            <h2>Yourcart</h2> 
+        </div>
+        <hr>
+        <div class="body-cart">    
+            <div class="pay">
+                        <h3 class="title"> Paymen</h3>
+                        <img style="max-width: 150px;" src="./assets/img/card2.png" alt="">
+                <form action="">
+                    <div class="inputbox" onsubmit="return validate()">
+                        <input required="required" type="text" id="namecard" >
+                        <span class="card-name">Name of Card :</span>
+                        <span id="error1"></span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required type="text" id="cardnumber">
+                        <span class="card-number">Credit Card Number :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="expmonth" >
+                        <span class="card-expMonth">Exp Month :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="expyear">
+                        <span class="card-expYear">Exp Year :</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input required="required" type="text" id="cvv" >
+                        <span class="card-CVV">CVV :</span>
+                        <i></i>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="product">
+                <h3>Product</h3>    
+                <!-- <button>Checkout</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
