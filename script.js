@@ -1,9 +1,20 @@
 let menu = document.querySelector("#menu-bar");
 let navbar = document.querySelector(".navbar");
-var btnopen = document.querySelector('cart2');
-var modal = document.querySelector('modal');
-var btnclose = document.querySelector('xmark');
+var btnopen = document.querySelector(".cart");
+var modal = document.querySelector(".modal");
+var btnclose = document.querySelector(".xmark");
 
+// function toggleModal() {
+//   modal.classList.add(".hide");
+// }
+// btnopen.addEventListener("click".toggleModal);
+
+function openModal() {
+  modal.classList.add("open-modal");
+}
+function closemodal() {
+  modal.classList.remove("open-modal");
+}
 menu.onclick = () => {
   menu.classList.toggle("fa-times");
   navbar.classList.toggle("active");
@@ -19,26 +30,26 @@ window.onscroll = () => {
     document.querySelector("#scroll-top").classList.remove("active");
   }
 };
-loader
-function loader() {
-  document.querySelector(".loader-container").classList.add("fade-out");
-}
-function fadeout() {
-  setInterval(loader, );
-}
-window.onload = fadeout();
-
+// loader
+// function loader() {
+//   document.querySelector(".loader-container").classList.add("fade-out");
+// }
+// function fadeout() {
+//   setInterval(loader);
+// }
+// window.onload = fadeout();
 let plus = document.querySelectorAll(".plus");
 let minus = document.querySelectorAll(".minus");
 let num = document.querySelectorAll(".num");
 
 for (let i = 0; i < plus.length; i++) {
-  var amount = 0;
+  var amount = 1;
   plus[i].addEventListener("click", () => {
     amount++;
     if (amount < 10) {
       amount = "0" + amount;
     }
+
     num[i].innerText = amount;
   });
 }
@@ -61,4 +72,3 @@ for (let i = 0; i < minus.length; i++) {
   });
 }
 // ------- MODAL----------
-
