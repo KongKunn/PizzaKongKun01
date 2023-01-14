@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="https://kit.fontawesome.com/bcacd0c471.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div class="modal hide-modal">
-    <div class="container-cart">
+<div class="modal  ">
+    <div class="container-cart ">
         <div class="header-cart">
-            <lord-icon
+            <lord-icon 
                 src="https://cdn.lordicon.com/cllunfud.json"
                 trigger="loop"
                 colors="outline:#e8b730,primary:#646e78,secondary:#646e78"
@@ -23,8 +23,7 @@
             </lord-icon>            
             <h2>Yourcart </h2> 
             <div class="xmark">
-                <i class='fas fa-xmark'></i>
-
+                <i class='fas fa-xmark' onclick="closemodal()"></i>
             </div>
         </div>
         <hr>
@@ -64,7 +63,7 @@
             <hr>
             <div class="product">
                 <h3>Product</h3>    
-                <!-- <button>Checkout</button> -->
+            
             </div>
         </div>
     </div>
@@ -92,15 +91,18 @@
     </div>
     
 
-        <button class="cart2">
+        <button >
 
             <lord-icon class="cart" 
             src="https://cdn.lordicon.com/cllunfud.json"
             trigger="hover"
-            style="width:50px;height:50px;bottom: 0;">
+            style="width:50px;height:50px;bottom: 0;" 
+            onclick="openModal()">
+            
             </lord-icon>
         </button>
-    
+                    
+   
 </header>  
 <!-- ====================== -->
 <!-- Cart -->
@@ -213,7 +215,7 @@
             <h3>Bánh kem hoa quả  </h3>
             <div class="add-product">
                 <button class="minus">-</button>
-            <span class="num">0</span>
+            <span class="num">01</span>
             <button class="plus">+</button>
             </div>
             <a href="#" class="btn">order now</a>
@@ -475,10 +477,10 @@
     <h1 class="credit">created by : <span> kongKun</h1>
 
 </seciton>
-<div class="loader-container">
+<!-- <div class="loader-container">
     <img src="./assets/img/load.gif" alt="">
 
-</div>
+</div> -->
 
 <!-- scroll top button -->
 
